@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/media/auntor/e8c879f4-0e89-4961-8ec4-d00e5741123d/sqa/SQA-practice-project/Automation-Selenium/Project/MyStore">
+        <classes/>
+    </test>
+</suite>
