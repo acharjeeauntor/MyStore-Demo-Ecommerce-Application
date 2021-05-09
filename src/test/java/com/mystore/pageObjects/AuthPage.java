@@ -38,4 +38,9 @@ public class AuthPage {
     WebElement retrievePassBtnElement;
 
 
+    public void submitAuthenticationEmailForm(String email) {
+        signInElement.click();
+        createAccountEmailElement.sendKeys(email);
+        createAccountBtnElement.click();
+    }
 }

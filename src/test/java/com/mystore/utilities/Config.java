@@ -21,4 +21,8 @@ public class Config {
 		}
 	}
 
+	public String getBaseUrl(){
+		String url = pro.getProperty("baseUrl");
+		return url;
+	}
 }
