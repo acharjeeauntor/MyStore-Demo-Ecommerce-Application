@@ -43,4 +43,20 @@ public class AuthPage {
         createAccountEmailElement.sendKeys(email);
         createAccountBtnElement.click();
     }
+
+    public void submitSignInForm(String email,String password) {
+        signInElement.click();
+        signInAndForgotPassEmailElement.sendKeys(email);
+        signInPasswordElement.sendKeys(password);
+        submitLoginBtnElement.click();
+    }
+
+    public void submitForgetPassEmailForm(String email){
+        signInElement.click();
+        forgotPassLinkElement.click();
+        signInAndForgotPassEmailElement.sendKeys(email);
+        retrievePassBtnElement.click();
+    }
+
+
 }
