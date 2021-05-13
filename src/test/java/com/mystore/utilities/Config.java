@@ -25,4 +25,12 @@ public class Config {
 		String url = pro.getProperty("baseUrl");
 		return url;
 	}
+	public String getLoginEmail(){
+		String loginEmail = pro.getProperty("email");
+		return loginEmail;
+	}
+	public String getLoginPassword(){
+		String loginPass = pro.getProperty("password");
+		return loginPass;
+	}
 }

@@ -9,7 +9,8 @@
     <test verbose="2" preserve-order="true" name="MyStore Test">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="com.mystore.testCases.AuthenticationModule" />
+<!--            <class name="com.mystore.testCases.AuthenticationModule" />-->
+            <class name="com.mystore.testCases.MyAddressModule" />
         </classes>
     </test>
 </suite>
