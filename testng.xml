@@ -7,12 +7,12 @@
     </listeners>
 
     <test verbose="2" preserve-order="true" name="MyStore Test">
-        <parameter name="browser" value="chrome" />
+        <parameter name="browser" value="firefox" />
         <classes>
-<!--            <class name="com.mystore.testCases.AuthenticationModule" />
+         <class name="com.mystore.testCases.AuthenticationModule" />
+            <!--   <class name="com.mystore.testCases.PersonalInformationModule" />
             <class name="com.mystore.testCases.MyAddressModule" />
-            <class name="com.mystore.testCases.PersonalInformationModule" />-->
-            <class name="com.mystore.testCases.ContactUsModule" />
+    <class name="com.mystore.testCases.ContactUsModule" />-->
         </classes>
     </test>
 </suite>

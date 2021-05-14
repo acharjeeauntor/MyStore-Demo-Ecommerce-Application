@@ -20,6 +20,7 @@ import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
     public static WebDriver driver;
@@ -51,7 +52,9 @@ public class BaseClass {
             driver = new InternetExplorerDriver();
         }
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(baseUrl);
+        //driver.manage().deleteAllCookies();
     }
 
     @AfterClass

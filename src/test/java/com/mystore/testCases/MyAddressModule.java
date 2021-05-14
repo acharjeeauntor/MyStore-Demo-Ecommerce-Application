@@ -1,6 +1,6 @@
 package com.mystore.testCases;
 
-import com.mystore.pageObjects.AuthPage;
+import com.mystore.pageObjects.IndexPage;
 import com.mystore.pageObjects.MyAddressPage;
 import com.mystore.utilities.InputData;
 import com.mystore.utilities.XLUtils;
@@ -12,21 +12,24 @@ import java.io.IOException;
 
 public class MyAddressModule extends BaseClass {
     MyAddressPage myAddressPage;
-    AuthPage authPage;
+    IndexPage indexPage;
 
 
 
     @Test(priority = 1, description = "Customer can update address using valid address information")
     public void updateAddressInfoUsingValidData() throws InterruptedException, IOException {
         myAddressPage = new MyAddressPage(driver);
+        indexPage = new IndexPage(driver);
         myAddressPage.saveUpdateAddressInfo("ontu", InputData.lastName, InputData.company, InputData.address,
                 InputData.address2, "Dhaka", "Iowa", InputData.postalCode, InputData.country, InputData.homePhone, InputData.mobilePhone, "xyz", "adabor");
         if (driver.getPageSource().contains("Your addresses are listed below.")) {
             logger.info("Test Passed");
             Assert.assertTrue(true);
+            indexPage.signOutFromAccount();
         } else {
             logger.warn("Test Failed");
             captureScreen(driver, "updateAddressInfoUsingValidData");
+            indexPage.signOutFromAccount();
             Assert.assertTrue(false);
         }
 
@@ -34,17 +37,20 @@ public class MyAddressModule extends BaseClass {
     }
 
     @Test(priority = 2, dataProvider = "UpdateCustomerDataProvider", description = "Customer can't update address using Invalid address information")
-    public void updateAddressInfoUsingInvalidData(String email,String pass,String firstName, String lastName, String company, String address, String address2, String city, String state, String code, String country, String homePhone, String mobilePhone, String additionalInfo, String reference) throws InterruptedException, IOException {
+    public void updateAddressInfoUsingInvalidData(String firstName, String lastName, String company, String address, String address2, String city, String state, String code, String country, String homePhone, String mobilePhone, String additionalInfo, String reference) throws InterruptedException, IOException {
         myAddressPage = new MyAddressPage(driver);
+        indexPage = new IndexPage(driver);
         myAddressPage.saveUpdateAddressInfo(firstName, lastName, company, address, address2, city, state, code, country, homePhone, mobilePhone, additionalInfo, reference);
         Thread.sleep(2000);
         if (driver.getPageSource().contains("Your addresses are listed below.")) {
             logger.warn("Test Failed");
             captureScreen(driver, "updateAddressInfoUsingInvalidData");
+            indexPage.signOutFromAccount();
             Assert.assertTrue(false);
         } else {
             logger.info("Test Passed");
             Assert.assertTrue(true);
+            indexPage.signOutFromAccount();
         }
 
 
@@ -53,14 +59,17 @@ public class MyAddressModule extends BaseClass {
     @Test(priority = 3,description ="Customer can delete address information" )
     public void deleteAddressInfo() throws IOException, InterruptedException {
         myAddressPage = new MyAddressPage(driver);
+        indexPage = new IndexPage(driver);
         myAddressPage.deleteAddress();
         if (isAlertPresent()) {
             driver.switchTo().alert().accept();
             logger.info("Test Passed");
             Assert.assertTrue(true);
+            indexPage.signOutFromAccount();
         }else{
             logger.warn("Test Failed");
             captureScreen(driver,"deleteAddressInfo");
+            indexPage.signOutFromAccount();
             Assert.assertTrue(false);
         }
     }

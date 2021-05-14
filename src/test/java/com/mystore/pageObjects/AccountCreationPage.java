@@ -26,9 +26,6 @@ public class AccountCreationPage {
     @FindBy(id = "customer_lastname")
     WebElement lastNameElement;
 
-    @FindBy(id = "email")
-    WebElement emailElement;
-
     @FindBy(id = "passwd")
     WebElement passwordElement;
 
@@ -83,7 +80,7 @@ public class AccountCreationPage {
     @FindBy(id = "submitAccount")
     WebElement registerBtnElement;
 
-    public void submitAccountCreationForm(String title, String fName, String lName, String email, String pass,
+    public void submitAccountCreationForm(String title, String fName, String lName,String pass,
                                           String birthDay, String birthMonth, String birthYear, String addressFName, String addressLName,
                                           String company, String address, String address2, String city, String state, String postalCode, String country, String additionalInfo, String homePhoneNumber, String mobilePhoneNumber, String refferAddress) throws InterruptedException {
 
@@ -95,8 +92,6 @@ public class AccountCreationPage {
         }
         firstNameElement.sendKeys(fName);
         lastNameElement.sendKeys(lName);
-        emailElement.clear();
-        emailElement.sendKeys(email);
         passwordElement.sendKeys(pass);
         Thread.sleep(2000);
         Select selectDay = new Select(birthDayElement);

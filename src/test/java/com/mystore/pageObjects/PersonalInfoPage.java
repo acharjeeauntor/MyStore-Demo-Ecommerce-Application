@@ -50,7 +50,7 @@ public void saveUpdatePersonalInfo(String title, String fName, String lName, Str
                                    String birthDay, String birthMonth, String birthYear,String currentPass,String newPass,String confirmPass) throws InterruptedException {
     myAccountPage = new MyAccountPage(ldriver);
     authPage = new AuthPage(ldriver);
-
+    Thread.sleep(1000);
     authPage.submitSignInForm(loginEmail, loginPassword);
     Thread.sleep(2000);
     myAccountPage.goToMyPersonalInfo();
@@ -66,13 +66,13 @@ public void saveUpdatePersonalInfo(String title, String fName, String lName, Str
     lastNameElement.sendKeys(lName);
     emailElement.clear();
     emailElement.sendKeys(email);
-    Thread.sleep(2000);
+    Thread.sleep(1000);
     Select selectDay = new Select(birthDayElement);
     selectDay.selectByValue(birthDay);
-    Thread.sleep(2000);
+    Thread.sleep(1000);
     Select selectMonth = new Select(birthMonthElement);
     selectMonth.selectByVisibleText(birthMonth);
-    Thread.sleep(2000);
+    Thread.sleep(1000);
     Select selectYear = new Select(birthYearElement);
     selectYear.selectByValue(birthYear);
     currentPasswordElement.sendKeys(currentPass);

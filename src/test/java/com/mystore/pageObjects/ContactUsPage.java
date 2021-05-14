@@ -28,7 +28,7 @@ public class ContactUsPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void sendContactUsForm(String sub, String email, String orderRef, String fileLocation, String msg) throws InterruptedException {
+    public void sendContactUsForm(String sub, String email, String orderRef, String fileName, String msg) throws InterruptedException {
         indexPage = new IndexPage(ldriver);
         indexPage.clickOnContactUs();
         Thread.sleep(2000);
@@ -36,7 +36,7 @@ public class ContactUsPage {
         subjectSelect.selectByVisibleText(sub);
         emailElement.sendKeys(email);
         orderRefElement.sendKeys(orderRef);
-        fileElement.sendKeys(fileLocation);
+        fileElement.sendKeys(System.getProperty("user.dir")+"/InputFiles/"+fileName);
         messageElement.sendKeys(msg);
         Thread.sleep(2000);
         sendBtnElement.click();

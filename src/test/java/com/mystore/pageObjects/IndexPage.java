@@ -12,6 +12,9 @@ public class IndexPage {
     WebElement signInElement;
     @FindBy(id = "contact-link")
     WebElement contactLinkElement;
+    @FindBy(className = "logout")
+    WebElement signOutElement;
+
 
     public IndexPage(WebDriver driver) {
         ldriver = driver;
@@ -26,5 +29,7 @@ public class IndexPage {
         contactLinkElement.click();
     }
 
-
+    public void signOutFromAccount() {
+        signOutElement.click();
+    }
 }

@@ -39,7 +39,7 @@ public class InputData extends BaseClass {
     public static String subject = "Customer service";
     public static String contactEmail = "acharjeeontu14@gmail.com";
     public static String orderReference = "My order";
-    public static String fileLocation = System.getProperty("user.dir")+"/InputFiles/fileText.txt";
+    public static String fileName = "fileText.txt";
     public static String message = "Good Product";
 
 
