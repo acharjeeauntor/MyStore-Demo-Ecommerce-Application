@@ -29,6 +29,7 @@ Total Bug:1<br>
 
 
 * #### Authentication Module Report
+![Screenshot from 2021-05-15 00-26-09](https://user-images.githubusercontent.com/38497405/118313161-35b59c80-b514-11eb-9e52-704e033f7ad7.png)
 ![Screenshot from 2021-05-14 22-44-28](https://user-images.githubusercontent.com/38497405/118302932-a9e94380-b506-11eb-831d-185ca321f9b4.png)
 ![Screenshot from 2021-05-14 22-44-00](https://user-images.githubusercontent.com/38497405/118302936-ab1a7080-b506-11eb-9454-b43a616fdd28.png)
 
