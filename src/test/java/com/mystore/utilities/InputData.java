@@ -25,5 +25,22 @@ public class InputData extends BaseClass {
     public static String mobilePhone = randomeNum();
     public static String ref = "ererere";
 
+    // Update Personal Info
+    public static String updateTitle = "Mr";
+    public static String updateFirstName = "ontu";
+    public static String updateLastName = "Acharja";
+    public static String updateEmail = "acharjeeontu14@gmail.com";
+    public static String updateBirthDay = "22";
+    public static String updateBirthMonth = "March ";
+    public static String updateBirthYear = "1997";
+    public static String updatePassword = "123456";
+
+    // Contact Us Form Input Data
+    public static String subject = "Customer service";
+    public static String contactEmail = "acharjeeontu14@gmail.com";
+    public static String orderReference = "My order";
+    public static String fileLocation = System.getProperty("user.dir")+"/InputFiles/fileText.txt";
+    public static String message = "Good Product";
+
 
 }

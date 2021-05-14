@@ -1,9 +1,6 @@
 package com.mystore.utilities;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.Properties;
 
 public class Config {
@@ -32,5 +29,12 @@ public class Config {
 	public String getLoginPassword(){
 		String loginPass = pro.getProperty("password");
 		return loginPass;
+	}
+	public void setLoginEmailAndPass(String em,String pass) throws IOException {
+		FileOutputStream out =new FileOutputStream(src);
+		pro.setProperty("email",em);
+		pro.setProperty("password",pass);
+		pro.store(out,null);
+		out.close();
 	}
 }

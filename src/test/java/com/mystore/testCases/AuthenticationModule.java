@@ -129,6 +129,7 @@ public class AuthenticationModule extends BaseClass {
         Thread.sleep(5000);
         if (driver.getTitle().equals("My account - My Store")) {
             logger.info("Test Passed");
+            config.setLoginEmailAndPass(email,InputData.password);
             Assert.assertTrue(true);
         } else {
             logger.warn("Test Failed");

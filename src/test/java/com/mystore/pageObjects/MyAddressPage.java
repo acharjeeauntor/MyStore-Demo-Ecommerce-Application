@@ -58,7 +58,7 @@ public class MyAddressPage {
         authPage = new AuthPage(ldriver);
 
 
-        //authPage.submitSignInForm(email, password);
+        authPage.submitSignInForm(loginEmail, loginPassword);
         Thread.sleep(2000);
         myAccountPage.goToMyAddress();
         Thread.sleep(2000);

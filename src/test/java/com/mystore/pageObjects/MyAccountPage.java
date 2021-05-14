@@ -14,10 +14,15 @@ public class MyAccountPage {
 
     @FindBy(xpath = "//span[text()='My addresses']")
     WebElement myAddressesOptionElement;
+    @FindBy(xpath = "//span[text()='My personal information']")
+    WebElement myPersonalInfoOptionElement;
 
 
 
     public void goToMyAddress(){
         myAddressesOptionElement.click();
+    }
+    public void goToMyPersonalInfo(){
+        myPersonalInfoOptionElement.click();
     }
 }

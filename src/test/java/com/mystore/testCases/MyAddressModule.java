@@ -36,8 +36,6 @@ public class MyAddressModule extends BaseClass {
     @Test(priority = 2, dataProvider = "UpdateCustomerDataProvider", description = "Customer can't update address using Invalid address information")
     public void updateAddressInfoUsingInvalidData(String email,String pass,String firstName, String lastName, String company, String address, String address2, String city, String state, String code, String country, String homePhone, String mobilePhone, String additionalInfo, String reference) throws InterruptedException, IOException {
         myAddressPage = new MyAddressPage(driver);
-        authPage= new AuthPage(driver);
-        authPage.submitSignInForm(email,pass);
         myAddressPage.saveUpdateAddressInfo(firstName, lastName, company, address, address2, city, state, code, country, homePhone, mobilePhone, additionalInfo, reference);
         Thread.sleep(2000);
         if (driver.getPageSource().contains("Your addresses are listed below.")) {
