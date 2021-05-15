@@ -3,16 +3,20 @@
 <suite name="My Store Demo Ecommerce Application">
     <listeners>
         <listener
-                class-name="com.mystore.utilities.Reporting" />
+                class-name="com.mystore.utilities.Reporting"/>
     </listeners>
 
     <test verbose="2" preserve-order="true" name="MyStore Test">
-        <parameter name="browser" value="firefox" />
+        <parameter name="browser" value="firefox"/>
         <classes>
-         <class name="com.mystore.testCases.AuthenticationModule" />
-            <!--   <class name="com.mystore.testCases.PersonalInformationModule" />
+            <!--<class name="com.mystore.testCases.AuthenticationModule" />
+            <class name="com.mystore.testCases.PersonalInformationModule" />
             <class name="com.mystore.testCases.MyAddressModule" />
-    <class name="com.mystore.testCases.ContactUsModule" />-->
+            <class name="com.mystore.testCases.ContactUsModule" />
+            <class name="com.mystore.testCases.ProductModule"/>-->
+
+            <!--For End To End Testing-->
+            <class name="com.mystore.testCases.PurchaseProductModule" />
         </classes>
     </test>
 </suite>

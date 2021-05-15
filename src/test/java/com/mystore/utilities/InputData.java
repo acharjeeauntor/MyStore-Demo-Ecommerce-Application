@@ -42,5 +42,21 @@ public class InputData extends BaseClass {
     public static String fileName = "fileText.txt";
     public static String message = "Good Product";
 
+    // Purchase Product Info
+    public static String productName = "Faded Short Sleeve T-shirts";
+    public static String quantity = "10";
+    public static String comment = "My order";
+    public static String paymentType = "Pay by bank wire";
+
+    // Review Product Info
+    public static String star = "4";
+    public static String reviewTitle = "first Review";
+    public static String reviewComment = "My order";
+
+    // Purchase Product Info For End To End Test
+    public static String productNameForEndToEnd = "Printed Summer Dress";
+    public static String quantityForEndToEnd = "3";
+    public static String commentForEndToEnd = "My EndToEnd order";
+    public static String paymentTypeForEndToEnd = "Pay by bank wire";
 
 }
