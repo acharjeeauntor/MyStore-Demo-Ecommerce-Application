@@ -1,5 +1,5 @@
 # MyStore-Demo-Ecommerce-Application
-This is a Demo project for Automation Testing using Selenium.
+This is a Demo project for Automation Testing using Selenium,TestNG and DDT
 #### Project website link: http://automationpractice.com/ <br>
 
 ------------------------------------------------
@@ -16,12 +16,15 @@ IDE: Intellij<br>
 
 --------------------------------------------------
 
-Number Of Module: 8 <br>
-Total testcase: 98 <br>
-Total Bug:1<br>
+Number Of Module: 6 <br>
+Total testcase: 44 <br>
+Total Bug: 1<br>
 
 ### Test Report Location: <br>
 > project root -> test-output-> Test-Report-date.html <br>
+
+### Sample End To End Product Purchase video Record:<br>
+[Lets go to the video](https://youtu.be/DSlhH5uMJFo)
 
 ### Sample Report Screenshot <br>
 
@@ -41,4 +44,10 @@ Total Bug:1<br>
 
 * #### My Address Module Report
 ![Screenshot from 2021-05-14 23-14-13](https://user-images.githubusercontent.com/38497405/118305829-57118b00-b50a-11eb-94f3-f31597e4e8af.png)
+
+* #### Product Module Report
+![Screenshot from 2021-05-15 15-44-59](https://user-images.githubusercontent.com/38497405/118359092-a788f700-b5a3-11eb-8b96-8d5180e87584.png)
+
+* #### Purchase Product End To End Testing Report
+![Screenshot from 2021-05-15 16-25-27](https://user-images.githubusercontent.com/38497405/118359093-a8ba2400-b5a3-11eb-9c5a-9a4788665724.png)
 
