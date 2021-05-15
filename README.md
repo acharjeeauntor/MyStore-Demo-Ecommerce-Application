@@ -1,4 +1,4 @@
-# MyStore-Demo-Ecommerce-Application
+# MyStore-Demo-Ecommerce-Application-Testing
 This is a Demo project for Automation Testing using Selenium,TestNG and DDT
 #### Project website link: http://automationpractice.com/ <br>
 
@@ -17,7 +17,7 @@ IDE: Intellij<br>
 --------------------------------------------------
 
 Number Of Module: 6 <br>
-Total testcase: 44 <br>
+Total Testcases: 44 <br>
 Total Bug: 1<br>
 
 ### Test Report Location: <br>
