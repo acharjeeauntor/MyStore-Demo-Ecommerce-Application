@@ -24,7 +24,7 @@ Total Bug: 1<br>
 > project root -> test-output-> Test-Report-date.html <br>
 
 ### Sample End To End Product Purchase video Record:<br>
-[Lets go to the video](https://youtu.be/DSlhH5uMJFo)
+[Lets see the video](https://youtu.be/DSlhH5uMJFo)
 
 ### Sample Report Screenshot <br>
 
